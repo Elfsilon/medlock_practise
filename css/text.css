@@ -1,0 +1,28 @@
+.text {
+    font-size: 16px;
+    color: #979EA7;
+}
+
+.text_fontsize_big {
+    font-size: 18px;
+}
+
+.text_fontsize_small {
+    font-size: 13px;
+}
+
+.text_caption1 {
+    font-size: 30px;
+}
+
+.text_caption2 {
+    font-size: 23px;
+}
+
+.text_color_dark {
+    color: #606367;
+}
+
+.text_color_black {
+    color: #3E3E3E;
+}

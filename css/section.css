@@ -1,0 +1,58 @@
+.section {
+    padding: 96px 0 88px 0;
+}
+
+.section:nth-child(2n+1) {
+    background-color: #F4F6F7;
+}
+
+.section__content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__title-container {
+    text-align: center;
+}
+
+.section_subtitle {
+    margin-top: 5px;
+}
+
+.section__body {
+    width: 1042px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+/* 1 */
+
+.why-medlock-section .section__title-container {
+    margin-bottom: 36px;
+}
+
+.why-medlock-section .section__button {
+    margin-top: 31px;
+}
+
+/* 2 */
+
+.from-whom-medlock-section .section__title-container {
+    margin-bottom: 61px;
+}
+
+.from-whom-medlock-section .section__button {
+    margin-top: 30px;
+}
+
+/* 3 */
+.reviews-section .section__title-container {
+    margin-bottom: 100px;
+}
+
+.reviews-section .section__button {
+    margin-top: 60px;
+}

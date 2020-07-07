@@ -1,0 +1,27 @@
+.main-carousel {
+  display: block;
+  width: 100%;
+}
+
+.carousel-cell {
+  opacity: 0.1;
+}
+
+.is-selected {
+  opacity: 1;
+}
+
+.flickity-prev-next-button {
+  top: 10px;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.flickity-prev-next-button.previous {
+  left: auto;
+  right: 60px;
+}
+
+.flickity-prev-next-button.next {
+  right: 10px;
+}

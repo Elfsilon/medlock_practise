@@ -1,0 +1,14 @@
+.with-love {
+    width: 100%;
+    height: 56px;
+    background-color: rgba(171, 173, 173, 0.27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.with-love__container {
+    display: flex;
+}
+
+.with-love__text {}

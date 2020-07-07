@@ -1,0 +1,46 @@
+.review {
+    position: relative;
+    width: 500px;
+    height: 248px;
+}
+
+.review__header {}
+
+.review__about-author-container {
+    display: flex;
+}
+
+.review__text {
+    margin-top: 16px;
+}
+
+.review__author-photo {
+    height: 64px;
+    width: 64px;
+}
+
+.review__author-post {
+    max-width: 274px;
+}
+
+.review__name-post-container {
+    margin-left: 14px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.review__erased {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    height: 153px;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 60%, rgba(255,255,255,0.9) 80%, rgba(255,255,255,0) 100%);
+}
+
+.review__show-more {
+    color: #117DC1;
+    border-bottom: 1px #117DC1 dashed;
+}

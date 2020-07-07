@@ -1,0 +1,63 @@
+.button {
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    background: none;
+    height: 56px;
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.button_medium {
+    width: 280px;
+}
+
+.button_small {
+    height: 40px;
+    width: 100%;
+    font-weight: 500;
+}
+
+.button_blue {
+    color: #117DC1;
+    background-color: #E5F2F9;
+}
+
+.button_primary {
+    background-color: #F7494E;
+    color: white;
+    transition: background-color 0.2s ease;
+}
+
+.button_primary:hover {
+    background-color: #ce2326;
+}
+
+.button_secondary {
+    position: relative;
+    background: none;
+    border: 2px solid #117DC1;
+    color: #117DC1;
+    transition: border, color 0.2s ease;
+}
+
+.button_secondary:hover {
+    border: 2px solid #11527a;
+    color: #11527a;   
+}
+
+.button_secondary:after {
+    content: 'или';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10px;
+    color: #979EA7;
+    padding: 0 10px;
+    background-color: #F7F9FA;
+}

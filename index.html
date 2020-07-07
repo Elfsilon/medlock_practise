@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/@index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>Landing</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__top">
+          <div class="header__logo-block">
+            <img class="header__logo" src="assets/logo.png" alt="medlock" />
+          </div>
+          <div class="header__presentation-container">
+            <div class="header__download-icon">
+              <img
+                class="header__download-icon-src"
+                src="assets/download_icon.png"
+                alt="download"
+              />
+            </div>
+            <p class="header__download-text text">скачать&nbsp;&nbsp;</p>
+            <a href="#" class="header__download-link text text_color_black"
+              >Прзезентация MedLock</a
+            >
+          </div>
+          <div class="header__buttons-container">
+            <button class="button button_small">
+              Регистрация
+            </button>
+            <button class="button button_small button_blue">Войти</button>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="header__bottom-content">
+            <h2
+              class="header__content-title text text_color_black text_caption1"
+            >
+              Бесплатная. Облачная. Защищенная.
+            </h2>
+            <p class="header__content-subtitle text">
+              Управление частной клиникой еще никогда не была настолько простой
+              и прозрачной.
+            </p>
+            <button
+              class="header__appointment-button button button_medium button_primary"
+            >
+              Записаться на тест-драйв
+            </button>
+            <button class="button button_medium button_secondary">
+              Начать использовать
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="parallax">
+        <img
+          class="parallax__top"
+          src="assets/medlock_top_part.svg"
+          alt="parallax-top"
+        />
+        <img
+          class="parallax__bottom"
+          src="assets/medlock_bottom_part.svg"
+          alt="parallax-bottom"
+        />
+      </div>
+    </header>
+
+    <section class="section why-medlock-section">
+      <div class="section__content content">
+        <div class="section__title-container">
+          <h3 class="section__title text text_color_black text_caption2">
+            Почему выбирают MedLock?
+          </h3>
+          <p class="section_subtitle text">Все просто, потому что:</p>
+        </div>
+        <div class="section__body">
+          <div class="card card_height_medium">
+            <div class="card__top">
+              <h2 class="card__title">Бесплатный</h2>
+              <div class="card__img_container">
+                <img class="card__img" src="assets/o.svg" alt="rubles-icon" />
+              </div>
+            </div>
+            <p class="card__text text">
+              Бесплатна для любой клиники без ограничения времени использования,
+              влючая все модули и интеграцию с сайтом ПроДокторов.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <h2 class="card__title">Быстрый запуск</h2>
+              <div class="card__img_container">
+                <img
+                  class="card__img"
+                  src="assets/rocket.svg"
+                  alt="rocket-icon"
+                />
+              </div>
+            </div>
+            <p class="card__text text">
+              Готовая рабочая информационная система сразу после получения
+              клиникой логина и пароля.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <h2 class="card__title">Надежный</h2>
+              <div class="card__img_container">
+                <img
+                  class="card__img"
+                  src="assets/insurance.svg"
+                  alt="rocket-icon"
+                />
+              </div>
+            </div>
+            <p class="card__text text">
+              Все ваши данные храняться в надежных защищенных зашифрованных
+              дата-центрах. Так же проводим автоматическое резервирование всех
+              данных.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <h2 class="card__title">Безопасный</h2>
+              <div class="card__img_container">
+                <img class="card__img" src="assets/key.svg" alt="rocket-icon" />
+              </div>
+            </div>
+            <p class="card__text text">
+              Вход в личный кабинет вашей клиники, происходит двухкомпонентным
+              секретным ключем, который знаете только Вы.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <h2 class="card__title">Простой</h2>
+              <div class="card__img_container">
+                <img
+                  class="card__img"
+                  src="assets/plane.svg"
+                  alt="rocket-icon"
+                />
+              </div>
+            </div>
+            <p class="card__text text">
+              Легкий и понятный интерфейс созданный совместно с клиниками и
+              врачами, позволит быстро начать работать с информационной
+              системой.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <h2 class="card__title">Законный</h2>
+              <div class="card__img_container">
+                <img
+                  class="card__img"
+                  src="assets/balance.svg"
+                  alt="rocket-icon"
+                />
+              </div>
+            </div>
+            <p class="card__text text">
+              Наши сервера находятся на территории РФ и все Ваши данные защищены
+              методом фргментации в соответствие рекомендациями Роскомнадзора.
+            </p>
+          </div>
+        </div>
+        <button class="section__button button button_medium button_primary">
+          Получить демо-доступ
+        </button>
+      </div>
+    </section>
+
+    <section class="section from-whom-medlock-section">
+      <div class="section__content content">
+        <div class="section__title-container">
+          <h3 class="section__title text text_color_black text_caption1">
+            Для кого подходит MedLock?
+          </h3>
+        </div>
+        <div class="section__body">
+          <div class="card card_background_dark">
+            <div class="card__top">
+              <h2 class="card__title">Без МИС</h2>
+            </div>
+            <p class="card__counts text_fontsize_big">
+              0 — 10 врачей
+            </p>
+            <p class="card__text text">
+              Для клиник, которые используют блокнот или файл Excel для записи
+              пациентов, MedLock позволит легко и быстро выйти на новый уровень
+              автоматизации.
+            </p>
+          </div>
+          <div class="card card_background_dark card_active">
+            <div class="card__top">
+              <h2 class="card__title">Без бюджета</h2>
+            </div>
+            <p class="card__counts text text_fontsize_big">
+              10 — 30 врачей
+            </p>
+            <p class="card__text text">
+              Для клиник, которые хотят сэкономить на ежемесячной оплате за
+              типовую облачную МИС или на одноразовой оплате за сервер с
+              офлановой МИС.
+            </p>
+          </div>
+          <div class="card card_background_dark">
+            <div class="card__top">
+              <h2 class="card__title">С устаревшей МИС</h2>
+            </div>
+            <p class="card__counts text_fontsize_big">
+              более 50 вречей
+            </p>
+            <p class="card__text text text">
+              Для клиник, которые давно купили офлайновую МИС, но не используют
+              многие модули старой МИС и недовольны отсутствие интеграции в ней
+              с порталом ПроДокторов.
+            </p>
+          </div>
+        </div>
+        <button class="section__button button button_medium button_primary">
+          Бесплатное обучение
+        </button>
+      </div>
+    </section>
+
+    <section class="section reviews-section">
+      <div class="section__content">
+        <div class="section__title-container">
+          <h3 class="section__title text text_color_black text_caption2">
+            Отзывы клиентов
+          </h3>
+        </div>
+
+            <div class="main-carousel" >
+              <div class="carousel-cell">
+                <div class="review">
+                  <div class="review__header">
+                    <div class="review__about-author-container">
+                      <img
+                        class="review__author-photo"
+                        src="assets/author2.png"
+                        alt="photo"
+                      />
+                      <div class="review__name-post-container">
+                        <h3 class="review__author-name">
+                          Азизов Ахмед Пирмагомедович
+                        </h3>
+                        <p class="review__author-post paragraph_big">
+                          доктор медицинских наук, профессор
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="review__text text text_color_dark">
+                    Наш системный администратор предложил мне систематизировать
+                    работу клиники с помощью новой программы MedLock, которая
+                    отличается простотой использования. С помощью этой программы
+                    удалось в значительной мере сократить бумажную работу персонала
+                    и больше времени уделить лечению и вниманию к пациенту. Выражаю
+                    большую благодарность разработчикам и желаю больших успехов в
+                    дальнейшей деятельности.
+                  </p>
+                  <div class="review__erased">
+                    <a class="review__show-more" href="#">Показать полностью</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="review">
+                  <div class="review__header">
+                    <div class="review__about-author-container">
+                      <img
+                        class="review__author-photo"
+                        src="assets/author2.png"
+                        alt="photo"
+                      />
+                      <div class="review__name-post-container">
+                        <h3 class="review__author-name">
+                          Азизов Ахмед Пирмагомедович
+                        </h3>
+                        <p class="review__author-post paragraph_big">
+                          доктор медицинских наук, профессор
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="review__text text text_color_dark">
+                    Наш системный администратор предложил мне систематизировать
+                    работу клиники с помощью новой программы MedLock, которая
+                    отличается простотой использования. С помощью этой программы
+                    удалось в значительной мере сократить бумажную работу персонала
+                    и больше времени уделить лечению и вниманию к пациенту. Выражаю
+                    большую благодарность разработчикам и желаю больших успехов в
+                    дальнейшей деятельности.
+                  </p>
+                  <div class="review__erased">
+                    <a class="review__show-more" href="#">Показать полностью</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="review">
+                  <div class="review__header">
+                    <div class="review__about-author-container">
+                      <img
+                        class="review__author-photo"
+                        src="assets/author2.png"
+                        alt="photo"
+                      />
+                      <div class="review__name-post-container">
+                        <h3 class="review__author-name">
+                          Азизов Ахмед Пирмагомедович
+                        </h3>
+                        <p class="review__author-post paragraph_big">
+                          доктор медицинских наук, профессор
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="review__text text text_color_dark">
+                    Наш системный администратор предложил мне систематизировать
+                    работу клиники с помощью новой программы MedLock, которая
+                    отличается простотой использования. С помощью этой программы
+                    удалось в значительной мере сократить бумажную работу персонала
+                    и больше времени уделить лечению и вниманию к пациенту. Выражаю
+                    большую благодарность разработчикам и желаю больших успехов в
+                    дальнейшей деятельности.
+                  </p>
+                  <div class="review__erased">
+                    <a class="review__show-more" href="#">Показать полностью</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="review">
+                  <div class="review__header">
+                    <div class="review__about-author-container">
+                      <img
+                        class="review__author-photo"
+                        src="assets/author2.png"
+                        alt="photo"
+                      />
+                      <div class="review__name-post-container">
+                        <h3 class="review__author-name">
+                          Азизов Ахмед Пирмагомедович
+                        </h3>
+                        <p class="review__author-post paragraph_big">
+                          доктор медицинских наук, профессор
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="review__text text text_color_dark">
+                    Наш системный администратор предложил мне систематизировать
+                    работу клиники с помощью новой программы MedLock, которая
+                    отличается простотой использования. С помощью этой программы
+                    удалось в значительной мере сократить бумажную работу персонала
+                    и больше времени уделить лечению и вниманию к пациенту. Выражаю
+                    большую благодарность разработчикам и желаю больших успехов в
+                    дальнейшей деятельности.
+                  </p>
+                  <div class="review__erased">
+                    <a class="review__show-more" href="#">Показать полностью</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="review">
+                  <div class="review__header">
+                    <div class="review__about-author-container">
+                      <img
+                        class="review__author-photo"
+                        src="assets/author2.png"
+                        alt="photo"
+                      />
+                      <div class="review__name-post-container">
+                        <h3 class="review__author-name">
+                          Азизов Ахмед Пирмагомедович
+                        </h3>
+                        <p class="review__author-post paragraph_big">
+                          доктор медицинских наук, профессор
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="review__text text text_color_dark">
+                    Наш системный администратор предложил мне систематизировать
+                    работу клиники с помощью новой программы MedLock, которая
+                    отличается простотой использования. С помощью этой программы
+                    удалось в значительной мере сократить бумажную работу персонала
+                    и больше времени уделить лечению и вниманию к пациенту. Выражаю
+                    большую благодарность разработчикам и желаю больших успехов в
+                    дальнейшей деятельности.
+                  </p>
+                  <div class="review__erased">
+                    <a class="review__show-more" href="#">Показать полностью</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <div class="review">
+                  <div class="review__header">
+                    <div class="review__about-author-container">
+                      <img
+                        class="review__author-photo"
+                        src="assets/author2.png"
+                        alt="photo"
+                      />
+                      <div class="review__name-post-container">
+                        <h3 class="review__author-name">
+                          Азизов Ахмед Пирмагомедович
+                        </h3>
+                        <p class="review__author-post paragraph_big">
+                          доктор медицинских наук, профессор
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="review__text text text_color_dark">
+                    Наш системный администратор предложил мне систематизировать
+                    работу клиники с помощью новой программы MedLock, которая
+                    отличается простотой использования. С помощью этой программы
+                    удалось в значительной мере сократить бумажную работу персонала
+                    и больше времени уделить лечению и вниманию к пациенту. Выражаю
+                    большую благодарность разработчикам и желаю больших успехов в
+                    дальнейшей деятельности.
+                  </p>
+                  <div class="review__erased">
+                    <a class="review__show-more" href="#">Показать полностью</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+
+      <button class="section__button button button_medium button_primary">
+        Попробовать бесплатно
+      </button>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__logo">
+          <img src="assets/footer_logo_medlock.png" alt="logo" />
+        </div>
+        <div class="footer__columns-container">
+          <div class="pack pack_columned">
+            <div class="pack__links">
+              <a class="pack__link" href="#">О компании</a>
+              <a class="pack__link" href="#">Команда</a>
+              <a class="pack__link" href="#">Документы компании</a>
+              <a class="pack__link" href="#">Контакты</a>
+            </div>
+          </div>
+          <div class="pack pack_columned">
+            <h4 class="pack__title">Условия использования</h4>
+            <div class="pack__links">
+              <a class="pack__link" href="#">Лицензионный договор</a>
+              <a class="pack__link" href="#">Обработка персональных данных</a>
+            </div>
+          </div>
+          <div class="pack">
+            <h4 class="pack__title">Наши проекты</h4>
+            <div class="pack__links">
+              <a class="pack__link" href="#">ПроДокторов</a>
+              <a class="pack__link" href="#">ПроТаблетки</a>
+              <a class="pack__link" href="#">МедОтвет</a>
+              <a class="pack__link" href="#">ПроБолезни</a>
+            </div>
+          </div>
+          <img class="footer__logo2" src="assets/logo2.png" alt="logo" />
+        </div>
+        <div class="footer__additional-container">
+          <p class="footer__additional-element text text_fontsize_big">
+            © 2014-2019&nbsp;ООО «МедРейтинг»&nbsp;ОГРН 1122311003760
+          </p>
+          <p class="footer__additional-element text text_fontsize_big">
+            8 (800) 333-53-17&nbsp;help@medlock.ru
+          </p>
+          <!-- <div class="footer__additional-group">
+            <p class="footer__additional-element text text_fontsize_big">
+              © 2014-2019
+            </p>
+            <p class="footer__additional-element text text_fontsize_big">
+              ООО «МедРейтинг»
+            </p>
+            <p class="footer__additional-element text text_fontsize_big">
+              ОГРН 1122311003760
+            </p>
+          </div>
+          <div class="footer__additional-group">
+            <p class="footer__additional-element text text_fontsize_big">
+              8 (800) 333-53-17
+            </p>
+            <p class="footer__additional-element text text_fontsize_big">
+              help@medlock.ru
+            </p>
+          </div> -->
+        </div>
+      </div>
+    </footer>
+
+    <section class="with-love">
+      <div class="with-love__container">
+        <p class="with-love__text text_fontsize_small">
+          СДЕЛАНО С ТОЙ САМОЙ&nbsp;&nbsp;
+        </p>
+        <img
+          class="with-love__image"
+          src="assets/heart.svg"
+          alt="heart-image"
+        />
+        <p class="with-love__text text_fontsize_small">&nbsp;&nbsp;ЛЮБОВЬЮ</p>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/slider.js"></script>
+  </body>
+</html>

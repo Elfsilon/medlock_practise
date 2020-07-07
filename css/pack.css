@@ -1,0 +1,22 @@
+.pack {
+    max-width: 280px;
+}
+
+.pack__title {
+    margin-bottom: 20px;
+}
+
+.pack__links {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.pack__link {
+    margin-right: 16px;
+    margin-bottom: 20px;
+}
+
+.pack_columned .pack__links {
+    display: flex;
+    flex-direction: column;
+}

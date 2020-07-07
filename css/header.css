@@ -1,0 +1,85 @@
+.header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F9FA;
+    overflow: hidden;
+}
+
+.header__content {
+    width: 1040px;
+    overflow: hidden;
+    margin-top: 38px;
+}
+
+.header__top {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__bottom {
+    position: relative;
+    margin: 90px 0 104px 0;
+}
+
+.parallax {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(42%, 10%);
+    box-shadow: 0 27px 20px 0 rgba(151, 158, 167, 0.15);
+}
+
+.header__bottom-content {
+    width: 390px;
+}
+
+
+.header__logo-block {
+    width: 140px;
+}
+
+.header__logo {
+    width: 90%;
+}
+
+.header__presentation-container {
+    display: flex;
+    align-items: center;
+}
+
+.header__download-icon {
+    height: 100%;
+    margin-right: 10px;
+}
+
+.header__download-icon-src {
+    height: 90%;
+}
+
+.header__download-link {
+    text-decoration: underline;
+}
+
+.header__buttons-container {
+    display: flex;
+    height: 100%;
+}
+
+.header__content-title {
+
+}
+
+.header__content-subtitle {
+    width: 308px;
+    margin-bottom: 55px;
+    margin-top: 26px;
+}
+
+.header__appointment-button {
+    margin-bottom: 24px;
+}
