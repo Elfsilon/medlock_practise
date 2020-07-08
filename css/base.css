@@ -6,20 +6,12 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: #3E3E3E;
+    /* color: #3E3E3E; */
     margin: 0 auto;
+    scroll-behavior: smooth;
 }
 
 a {
     color: #3E3E3E;
     text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-}
-
-p {
-    color: #979EA7;
-    font-size: 0.9rem;
 }

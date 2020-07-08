@@ -1,22 +1,22 @@
-.pack {
+.list {
     max-width: 280px;
 }
 
-.pack__title {
+.list__title {
     margin-bottom: 20px;
 }
 
-.pack__links {
+.list__items {
     display: flex;
     flex-flow: row wrap;
 }
 
-.pack__link {
+.list__item {
     margin-right: 16px;
     margin-bottom: 20px;
 }
 
-.pack_columned .pack__links {
+.list_columned .list__items {
     display: flex;
     flex-direction: column;
 }

@@ -1,6 +1,6 @@
-const parallaxBottom = document.querySelector('.parallax__bottom');
+const parallaxBottomPicture = document.querySelector('.parallax__bottom');
 
 document.addEventListener('scroll', () => {
     let offset = -window.pageYOffset / 6;
-    if (offset > -105) parallaxBottom.style.transform = `translateY(${offset}px)`;
+    if (offset > -105) parallaxBottomPicture.style.transform = `translateY(${offset}px)`;
 });

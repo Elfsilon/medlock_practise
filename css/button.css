@@ -1,5 +1,5 @@
 .button {
-    padding: 0 15px;
+    padding: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,15 +9,15 @@
     height: 56px;
     font-weight: 700;
     border-radius: 5px;
-    font-size: 0.9rem;
+    font-size: 16px;
     cursor: pointer;
 }
 
-.button_medium {
+.button_size_medium {
     width: 280px;
 }
 
-.button_small {
+.button_size_small {
     height: 40px;
     width: 100%;
     font-weight: 500;
@@ -41,22 +41,23 @@
 .button_secondary {
     position: relative;
     background: none;
-    border: 2px solid #117DC1;
+    border: 1px solid #117DC1;
     color: #117DC1;
     transition: border, color 0.2s ease;
 }
 
 .button_secondary:hover {
-    border: 2px solid #11527a;
+    border: 1px solid #11527a;
     color: #11527a;   
 }
 
 .button_secondary:after {
     content: 'или';
+    font-weight: 500;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -10px;
+    top: -15px;
     color: #979EA7;
     padding: 0 10px;
     background-color: #F7F9FA;

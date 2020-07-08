@@ -1,10 +1,10 @@
 .footer {
     background-color: #F7F9FA;
-    padding: 69px 0 64px;
+    padding: 83px 0 65px;
 }
 
 .footer__content {
-    width: 1033px;
+    width: 1040px;
     margin: 0 auto;
 }
 
@@ -29,7 +29,7 @@
     margin-right: 0;
 }
 
-.footer__columns-container {
+.footer__list-container {
     height: 118px;
     display: flex;
     align-items: flex-start;

@@ -1,6 +1,6 @@
 .review {
     position: relative;
-    width: 500px;
+    width: 512px;
     height: 248px;
 }
 
@@ -23,7 +23,7 @@
     max-width: 274px;
 }
 
-.review__name-post-container {
+.review__author-name-post-container {
     margin-left: 14px;
     display: flex;
     flex-flow: column;

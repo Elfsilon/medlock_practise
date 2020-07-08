@@ -1,5 +1,5 @@
 .section {
-    padding: 96px 0 88px 0;
+    padding: 88px 0 80px 0;
 }
 
 .section:nth-child(2n+1) {
@@ -7,52 +7,56 @@
 }
 
 .section__content {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
+    width: 1042px;
+    margin: 0 auto;
+}
+
+.section__title {
+    text-align: center;
+}
+
+.section__subtitle {
+    text-align: center;
 }
 
 .section__title-container {
     text-align: center;
 }
 
-.section_subtitle {
+.section__subtitle {
     margin-top: 5px;
 }
 
+.section__button {
+    margin: 0 auto;
+}
+
 .section__body {
-    width: 1042px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
-/* 1 */
+.section__content_full-width {
+    width: 100%;
+}
 
-.why-medlock-section .section__title-container {
+.section__element_margin-bottom_s {
     margin-bottom: 36px;
 }
 
-.why-medlock-section .section__button {
-    margin-top: 31px;
-}
-
-/* 2 */
-
-.from-whom-medlock-section .section__title-container {
+.section__element_margin-bottom_m {
     margin-bottom: 61px;
 }
 
-.from-whom-medlock-section .section__button {
-    margin-top: 30px;
-}
-
-/* 3 */
-.reviews-section .section__title-container {
+.section__element_margin-bottom_l {
     margin-bottom: 100px;
 }
 
-.reviews-section .section__button {
+.section__element_margin-top_s {
+    margin-top: 31px;
+}
+
+.section__element_margin-top_m {
     margin-top: 60px;
 }

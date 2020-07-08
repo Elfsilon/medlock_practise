@@ -1,6 +1,7 @@
 .main-carousel {
   display: block;
   width: 100%;
+  position: relative;
 }
 
 .carousel-cell {
@@ -11,17 +12,31 @@
   opacity: 1;
 }
 
-.flickity-prev-next-button {
-  top: 10px;
-  -webkit-transform: none;
-          transform: none;
+.carousel-cell {
+  opacity: 0.1;
+  margin: 0 47px;
 }
 
-.flickity-prev-next-button.previous {
-  left: auto;
-  right: 60px;
+.is-selected {
+  opacity: 1;
+}
+.flickity-button {
+  background: none;
+  border: 2px solid #adb0b8;
+  border-radius: 5px;
+  width: 26px;
+  height: 26px;
 }
 
-.flickity-prev-next-button.next {
-  right: 10px;
+.flickity-button-icon {
+  transform: scale(0.9);
+  fill: #adb0b8;
+}
+
+.next {
+  transform: translateX(calc(-50vw + 631px));
+}
+
+.previous {
+  transform: translateX(calc(50vw - 631px));
 }

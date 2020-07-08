@@ -10,41 +10,31 @@
 
 .header__content {
     width: 1040px;
-    overflow: hidden;
-    margin-top: 38px;
+    display: flex;
 }
 
-.header__top {
-    height: 40px;
+.header__left-container {
+    width: 43%;
+}
+
+.header__right-container {
+    width: 57%;
+}
+
+.header__top-panel-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 38px 0 24px;
 }
 
-.header__bottom {
-    position: relative;
-    margin: 90px 0 104px 0;
-}
-
-.parallax {
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform: translate(42%, 10%);
-    box-shadow: 0 27px 20px 0 rgba(151, 158, 167, 0.15);
-}
-
-.header__bottom-content {
+.header__main-content-wrapper {
     width: 390px;
-}
-
-
-.header__logo-block {
-    width: 140px;
+    margin: 66px 0 104px;
 }
 
 .header__logo {
-    width: 90%;
+    width: 140px;
 }
 
 .header__presentation-container {
@@ -65,16 +55,12 @@
     text-decoration: underline;
 }
 
-.header__buttons-container {
+.header__top-panel-buttons-container {
     display: flex;
     height: 100%;
 }
 
-.header__content-title {
-
-}
-
-.header__content-subtitle {
+.header__main-subtitle {
     width: 308px;
     margin-bottom: 55px;
     margin-top: 26px;
@@ -82,4 +68,8 @@
 
 .header__appointment-button {
     margin-bottom: 24px;
+}
+
+.header__parallax{
+    position: absolute;
 }
