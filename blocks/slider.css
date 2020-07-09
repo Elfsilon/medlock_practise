@@ -1,0 +1,38 @@
+.swiper-container {
+    width: 100%;
+    overflow: visible;
+    position: relative;
+}
+
+.slider__slide {
+    opacity: 0.1;
+}
+
+.slider__slide_visible {
+    opacity: 1;
+}
+
+.slider__button {
+    position: absolute;
+    background: none;
+    border: 2px solid #adb0b8;
+    border-radius: 5px;
+    width: 26px;
+    height: 26px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__button-next {
+    right: 0;
+    top: 50%;
+    transform: translate(70px, -140%);
+}
+
+.slider__button-prev {
+    left: 0;
+    top: 50%;
+    transform: translate(-50px, -140%);
+}

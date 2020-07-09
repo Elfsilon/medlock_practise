@@ -3,6 +3,10 @@
     color: #979EA7;
 }
 
+.text_fontweight_bold {
+    font-weight: 700;
+}
+
 .text_fontsize_big {
     font-size: 18px;
 }
@@ -25,4 +29,8 @@
 
 .text_color_black {
     color: #3E3E3E;
+}
+
+.text_color_blue {
+    color: #1386C8;
 }
