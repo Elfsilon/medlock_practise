@@ -1,0 +1,52 @@
+.time-select {
+  width: 100%;
+  padding: 40px;
+  max-height: 363px;
+  overflow-y: scroll;
+  border-radius: 5px;
+}
+
+.time-select__cell {
+  display: flex;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.time-select__cell_selected {
+}
+
+.time-select__unselect-button {
+  position: absolute;
+  top: 50%;
+  left: -16px;
+  transform: translate(-80%, -50%);
+}
+
+.time-select__time {
+  width: 100%;
+}
+
+.time-select__select-button {
+  margin-left: 6px;
+}
+
+.time-select_hidden {
+  display: none;
+}
+
+.time-select__message {
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  opacity: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ADB0B8;
+  border-radius: 5px;
+}

@@ -10,8 +10,9 @@
     background-color: rgba(90, 92, 97, 0.5);
     display: none;
     z-index: 10;
+    transition: display 0.35s ease;
 }
 
-.modal_active {
+.modal_opened {
     display: flex;
 }

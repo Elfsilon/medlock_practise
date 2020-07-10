@@ -1,18 +1,18 @@
 .calendar {
     width: 320px;
-    min-height: 320px;
 }
 
 .calendar__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: 19px;
 }
 
 .calendar__days {
     display: flex;
     flex-wrap: wrap;
+    height: 245px;
 }
 
 .calendar__head {
@@ -28,7 +28,7 @@
 .calendar__cell {
     width: 32px;
     height: 32px;
-    margin: 16px 16px 0 0;
+    margin: 3px 16px 0 0;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -188,7 +188,7 @@
             <div class="card__top">
               <h2 class="card__title">Без МИС</h2>
             </div>
-            <p class="card__counts text_fontsize_big">
+            <p class="card__counts text text_fontsize_big">
               0 — 10 врачей
             </p>
             <p class="card__text text">
@@ -214,7 +214,7 @@
             <div class="card__top">
               <h2 class="card__title">С устаревшей МИС</h2>
             </div>
-            <p class="card__counts text_fontsize_big">
+            <p class="card__counts text text_fontsize_big">
               более 50 вречей
             </p>
             <p class="card__text text text">
@@ -392,25 +392,25 @@
         </div>
         <div class="footer__additional-container">
           <p class="footer__additional-element text text_fontsize_big">
-            © 2014-2019&nbsp;ООО «МедРейтинг»&nbsp;ОГРН 1122311003760
+            © 2014-2019&nbsp;&nbsp;ООО «МедРейтинг»&nbsp;&nbsp;ОГРН 1122311003760
           </p>
           <p class="footer__additional-element text text_fontsize_big">
-            8 (800) 333-53-17&nbsp;help@medlock.ru
+            8 (800) 333-53-17&nbsp;&nbsp;help@medlock.ru
           </p>
         </div>
       </div>
     </footer>
 
     <section class="with-love">
-      <p class="with-love__text text_fontsize_small">
+      <p class="with-love__text text text_fontsize_small">
         СДЕЛАНО С ТОЙ САМОЙ&nbsp;&nbsp;
       </p>
       <img class="with-love__image" src="assets/heart.svg" alt="heart-image" />
-      <p class="with-love__text text_fontsize_small">&nbsp;&nbsp;ЛЮБОВЬЮ</p>
+      <p class="with-love__text text text_fontsize_small">&nbsp;&nbsp;ЛЮБОВЬЮ</p>
     </section>
 
     <div class="modal">
-      <div class="modal-container appointment">
+      <div class="appointment">
         <div class="appointment__wrapper appointment__wrapper_padding_title">
           <p class="appointment__title text text_color_black">Выберите дату и время записи на демонстрацию</p>
           <div class="appointment__close-btn">
@@ -419,39 +419,23 @@
         </div>
         <div class="appointment__wrapper appointment__wrapper_no-border appointment__wrapper_fullheight">
           <div class="appointment__inner-wrapper appointment__inner-wrapper_width_m appointment__inner-wrapper_white">
-            <div class="calendar">
-              <div class="calendar__wrapper">
-                <img class="calendar__button-prev" src="assets/left_arrow.svg" alt="&#10092;">
-                <div class="calendar__current-date">
-                  <h3 class="calendar__current-month text text_color_blue text_fontsize_big">Июль</h3>
-                  <h3 class="calendar__current-year text text_color_blue text_fontsize_big">2020</h3>
-                </div>
-                <img class="calendar__button-next" src="assets/right_arrow.svg" alt="&#10093;">
-              </div>
-              <div class="calendar__days">
-                <p class="calendar__cell calendar__head calendar__head_font_dark">Пн</p>
-                <p class="calendar__cell calendar__head calendar__head_font_dark">Вт</p>
-                <p class="calendar__cell calendar__head calendar__head_font_dark">Ср</p>
-                <p class="calendar__cell calendar__head calendar__head_font_dark">Чт</p>
-                <p class="calendar__cell calendar__head calendar__head_font_dark">Пт</p>
-                <p class="calendar__cell calendar__head">Сб</p>
-                <p class="calendar__cell calendar__head">Вс</p>
-              </div>
-            </div>
+            <div class="calendar"></div>
           </div>
-          <div class="appointment__inner-wrapper appointment__inner-wrapper_width_s appointment__inner-wrapper_blue">
-            <div class="appointment__select-time">select time</div>
+          <div class="appointment__inner-wrapper appointment__inner-wrapper_width_s appointment__inner-wrapper_blue appointment__inner-wrapper_stretch">
+            <div class="time-select"></div>
           </div>
         </div>
       </div>
     </div>
 
+    <script src="blocks/modal.js"></script>
+    <script src="blocks/header.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="blocks/slider.js" ></script>
     <script src="blocks/parallax.js"></script>
-    <script src="blocks/modal.js"></script>
     <script src="blocks/rewiew.js"></script>
+    <script src="blocks/time_select.js"></script>
     <script src="blocks/calendar.js"></script>
   </body>
 </html>

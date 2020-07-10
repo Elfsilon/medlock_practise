@@ -23,6 +23,23 @@
     font-weight: 500;
 }
 
+.button_dark-blue {
+    color: white;
+    background-color: #117DC1;
+    transition: background-color 0.35s ease;
+}
+
+.button_dark-blue-bordered {
+    color: #117DC1;
+    background-color: white;
+    border: 1px solid #117DC1;
+    transition: border 0.35s ease;
+}
+
+.button_dark-blue:hover {
+    background-color: #155983;
+}
+
 .button_blue {
     color: #117DC1;
     background-color: #E5F2F9;
@@ -31,7 +48,7 @@
 .button_primary {
     background-color: #F7494E;
     color: white;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.35s ease;
 }
 
 .button_primary:hover {
@@ -43,7 +60,7 @@
     background: none;
     border: 1px solid #117DC1;
     color: #117DC1;
-    transition: border, color 0.2s ease;
+    transition: border, color 0.35s ease;
 }
 
 .button_secondary:hover {

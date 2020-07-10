@@ -41,9 +41,14 @@
 .appointment__inner-wrapper {
     height: 100%;
     width: 100%;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.appointment__inner-wrapper_stretch {
+    align-items: stretch;
 }
 
 .appointment__inner-wrapper_width_m {
