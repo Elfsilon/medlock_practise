@@ -1,47 +1,45 @@
-function createElement(nodeType, classList) {
-    let node = document.createElement(nodeType);
-    node.classList.add(...classList);
-    return node;
-}
+class Appointment extends Component {
+	constructor(calendarInstance, timeSelectInstance) {
+		super();
+		this.calendar = calendarInstance || null;
+		this.timeSelect = timeSelectInstance || null;
+		return this.render().elementRoot;
+	}
 
-class Appointment {
-    root = null;
+	render() {
+		const mainContainer = new Element('div').addClassNames('appointment');
 
-    constructor () {
-        this.appointmentInit();
-        this.appointmentRender();
-        `
-        <div class="appointment">
-            <div class="appointment__wrapper appointment__wrapper_padding_title">
-                <p class="appointment__title text text_color_black">Выберите дату и время записи на демонстрацию</p>
-                <div class="appointment__close-btn">
-                    <img class="appointment__close-icon" src="assets/crossing.svg" alt="x">
-                </div>
-            </div>
-            <div class="appointment__wrapper appointment__wrapper_no-border appointment__wrapper_fullheight">
-                <div class="appointment__inner-wrapper appointment__inner-wrapper_width_m appointment__inner-wrapper_white">
-                    <div class="calendar"></div>
-                </div>
-                <div class="appointment__inner-wrapper appointment__inner-wrapper_width_s appointment__inner-wrapper_blue appointment__inner-wrapper_stretch">
-                    <div class="time-select"></div>
-                </div>
-            </div>
-      </div>
-      `
-    }
+		const headerWrapper = new Element('div').addClassNames('appointment__wrapper', 'appointment__wrapper_padding_title');
+		const title = new Element('p')
+			.addClassNames('appointment__title', 'text', 'text_color_black')
+			.addText('Выберите дату и время записи на демонстрацию');
+		const closeButton = new Element('div').addClassNames('appointment__close-btn').addListener('click', () => {
+			modal.modalWindowClose();
+		});
+		const closeButtonIcon = new Element('img', 'assets/crossing.svg', 'x').addClassNames('appointment__close-icon');
+		const bodyWrapper = new Element('div').addClassNames(
+			'appointment__wrapper',
+			'appointment__wrapper_no-border',
+			'appointment__wrapper_fullheight'
+		);
+		const calendarWrapper = new Element('div').addClassNames(
+			'appointment__inner-wrapper',
+			'appointment__inner-wrapper_width_m',
+			'appointment__inner-wrapper_white'
+		);
+		const timeSelectWrapper = new Element('div').addClassNames(
+			'appointment__inner-wrapper',
+			'appointment__inner-wrapper_width_s',
+			'appointment__inner-wrapper_blue',
+			'appointment__inner-wrapper_stretch'
+		);
+		const calendar = new Element('div').addClassNames('calendar');
+		const timeSelect = new Element('div').addClassNames('time-select');
 
-    init() {
-        let mainContainer = createElement('div', ['appointment']);
-        let headerWrapper = createElement('div', ['appointment__wrapper', 'appointment__wrapper_padding_title']);
-        let title = createElement('p', ['appointment__title', 'text', 'text_color_black']);
-        let closeButton = createElement('div', ['appointment__close-btn']);
-        let closeButtonIcon = createElement('img', ['appointment__close-icon']);
-        let bodyWrapper = createElement('div', ['appointment__wrapper', 'appointment__wrapper_no-border', 'appointment__wrapper_fullheight']);
-        let calendarWrapper = createElement('div', ['appointment__inner-wrapper', 'appointment__inner-wrapper_width_m', 'appointment__inner-wrapper_white']);
-        let timeSelectWrapper = createElement('div', ['appointment__inner-wrapper', 'appointment__inner-wrapper_width_s', 'appointment__inner-wrapper_blue', 'appointment__inner-wrapper_stretch']);
-    }
-
-    render() {
-
-    }
+		return mainContainer.append(
+			headerWrapper.append(title, closeButton.append(closeButtonIcon)),
+			bodyWrapper.append(calendarWrapper.append(calendar), timeSelectWrapper.append(timeSelect))
+			// bodyWrapper.append(calendarWrapper.append(this.calendar), timeSelectWrapper(this.timeSelect))
+		);
+	}
 }

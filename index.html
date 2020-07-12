@@ -1,441 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="index.css" />
-    <title>Landing</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__content">
-        <div class="header__left-container">
-          <div class="header__top-panel-wrapper">
-            <img class="header__logo" src="assets/logo.svg" alt="medlock" />
-          </div>
-          <div class="header__main-content-wrapper">
-            <h2 class="header__main-title text text_color_black text_caption1">
-              Бесплатная. Облачная. Защищенная.
-            </h2>
-            <p class="header__main-subtitle text">
-              Управление частной клиникой еще никогда не было настолько простой
-              и прозрачной.
-            </p>
-            <button
-              class="header__appointment-button button button_primary button_size_medium"
-            >
-              Записаться на тест-драйв
-            </button>
-            <button class="button button_size_medium button_secondary">
-              Начать использовать
-            </button>
-          </div>
-        </div>
-        <div class="header__right-container">
-          <div class="header__top-panel-wrapper">
-            <div class="header__presentation-container">
-              <img
-                class="header__download-icon"
-                src="assets/download_icon.png"
-                alt="download"
-              />
-              <p class="header__download-text text">скачать&nbsp;&nbsp;</p>
-              <a href="#" class="header__download-link text text_color_black"
-                >Прзезентация MedLock</a
-              >
-            </div>
-            <div class="header__top-panel-buttons-container">
-              <button class="button button_size_small">
-                Регистрация
-              </button>
-              <button class="button button_size_small button_blue">
-                Войти
-              </button>
-            </div>
-          </div>
-          <div class="header__parallax">
-            <div class="parallax">
-              <img
-                class="parallax__top"
-                src="assets/medlock_top_part.svg"
-                alt="parallax-top"
-              />
-              <img
-                class="parallax__bottom"
-                src="assets/medlock_bottom_part.svg"
-                alt="parallax-bottom"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+		<!-- swiper -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="index.css" />
+		<title>Landing</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__content">
+				<div class="header__left-container">
+					<div class="header__top-panel-wrapper">
+						<img class="header__logo" src="assets/logo.svg" alt="medlock" />
+					</div>
+					<div class="header__main-content-wrapper">
+						<h2 class="header__main-title text text_color_black text_caption1">
+							Бесплатная. Облачная. Защищенная.
+						</h2>
+						<p class="header__main-subtitle text">
+							Управление частной клиникой еще никогда не было настолько простой и прозрачной.
+						</p>
+						<button class="header__appointment-button button button_primary button_size_medium">
+							Записаться на тест-драйв
+						</button>
+						<button class="button button_size_medium button_secondary">
+							Начать использовать
+						</button>
+					</div>
+				</div>
+				<div class="header__right-container">
+					<div class="header__top-panel-wrapper">
+						<div class="header__presentation-container">
+							<img class="header__download-icon" src="assets/download_icon.png" alt="download" />
+							<p class="header__download-text text">скачать&nbsp;&nbsp;</p>
+							<a href="#" class="header__download-link text text_color_black">Прзезентация MedLock</a>
+						</div>
+						<div class="header__top-panel-buttons-container">
+							<button class="button button_size_small">
+								Регистрация
+							</button>
+							<button class="button button_size_small button_blue">
+								Войти
+							</button>
+						</div>
+					</div>
+					<div class="header__parallax">
+						<div class="parallax">
+							<img class="parallax__top" src="assets/medlock_top_part.svg" alt="parallax-top" />
+							<img class="parallax__bottom" src="assets/medlock_bottom_part.svg" alt="parallax-bottom" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
 
-    <section class="section">
-      <div class="section__content">
-        <h3 class="section__title text text_color_black text_caption2">
-          Почему выбирают MedLock?
-        </h3>
-        <p class="section__subtitle text section__element_margin-bottom_s">
-          Все просто, потому что:
-        </p>
-        <div class="section__body">
-          <div class="card card_height_medium">
-            <div class="card__top">
-              <h2 class="card__title">Бесплатный</h2>
-              <img class="card__img" src="assets/o.svg" alt="rubles-icon" />
-            </div>
-            <p class="card__text text">
-              Бесплатна для любой клиники без ограничения времени использования,
-              влючая все модули и интеграцию с сайтом ПроДокторов.
-            </p>
-          </div>
-          <div class="card">
-            <div class="card__top">
-              <h2 class="card__title">Быстрый запуск</h2>
-              <img
-                class="card__img"
-                src="assets/rocket.svg"
-                alt="rocket-icon"
-              />
-            </div>
-            <p class="card__text text">
-              Готовая рабочая информационная система сразу после получения
-              клиникой логина и пароля.
-            </p>
-          </div>
-          <div class="card">
-            <div class="card__top">
-              <h2 class="card__title">Надежный</h2>
-              <img
-                class="card__img"
-                src="assets/insurance.svg"
-                alt="rocket-icon"
-              />
-            </div>
-            <p class="card__text text">
-              Все ваши данные храняться в надежных защищенных зашифрованных
-              дата-центрах. Так же проводим автоматическое резервирование всех
-              данных.
-            </p>
-          </div>
-          <div class="card">
-            <div class="card__top">
-              <h2 class="card__title">Безопасный</h2>
-              <img class="card__img" src="assets/key.svg" alt="rocket-icon" />
-            </div>
-            <p class="card__text text">
-              Вход в личный кабинет вашей клиники, происходит двухкомпонентным
-              секретным ключем, который знаете только Вы.
-            </p>
-          </div>
-          <div class="card">
-            <div class="card__top">
-              <h2 class="card__title">Простой</h2>
-              <img class="card__img" src="assets/plane.svg" alt="rocket-icon" />
-            </div>
-            <p class="card__text text">
-              Легкий и понятный интерфейс созданный совместно с клиниками и
-              врачами, позволит быстро начать работать с информационной
-              системой.
-            </p>
-          </div>
-          <div class="card">
-            <div class="card__top">
-              <div class="card__group">
-                <h2 class="card__title">Законный</h2>
-                <div class="card__tooltip-wrapper">
-                  <img class="card__info-icon" src="assets/tooltip-icon.svg" alt="tooltip">
-                  <div class="card__tooltip text text_color_black">Сервера на территории РФ (соответствие 152-ФЗ и 242-ФЗ)</div>
-                </div>
-              </div>
-              <img
-                class="card__img"
-                src="assets/balance.svg"
-                alt="rocket-icon"
-              />
-            </div>
-            <p class="card__text text">
-              Наши сервера находятся на территории РФ и все Ваши данные защищены
-              методом фргментации в соответствие рекомендациями Роскомнадзора.
-            </p>
-          </div>
-        </div>
-        <button
-          class="section__button button button_size_medium button_primary section__element_margin-top_s"
-        >
-          Получить демо-доступ
-        </button>
-      </div>
-    </section>
+		<section class="section">
+			<div class="section__content">
+				<h3 class="section__title text text_color_black text_caption2">
+					Почему выбирают MedLock?
+				</h3>
+				<p class="section__subtitle text section__element_margin-bottom_s">
+					Все просто, потому что:
+				</p>
+				<div class="section__body">
+					<div class="card card_height_medium">
+						<div class="card__top">
+							<h2 class="card__title">Бесплатный</h2>
+							<img class="card__img" src="assets/o.svg" alt="rubles-icon" />
+						</div>
+						<p class="card__text text">
+							Бесплатна для любой клиники без ограничения времени использования, влючая все модули и интеграцию с сайтом
+							ПроДокторов.
+						</p>
+					</div>
+					<div class="card">
+						<div class="card__top">
+							<h2 class="card__title">Быстрый запуск</h2>
+							<img class="card__img" src="assets/rocket.svg" alt="rocket-icon" />
+						</div>
+						<p class="card__text text">
+							Готовая рабочая информационная система сразу после получения клиникой логина и пароля.
+						</p>
+					</div>
+					<div class="card">
+						<div class="card__top">
+							<h2 class="card__title">Надежный</h2>
+							<img class="card__img" src="assets/insurance.svg" alt="rocket-icon" />
+						</div>
+						<p class="card__text text">
+							Все ваши данные храняться в надежных защищенных зашифрованных дата-центрах. Так же проводим автоматическое
+							резервирование всех данных.
+						</p>
+					</div>
+					<div class="card">
+						<div class="card__top">
+							<h2 class="card__title">Безопасный</h2>
+							<img class="card__img" src="assets/key.svg" alt="rocket-icon" />
+						</div>
+						<p class="card__text text">
+							Вход в личный кабинет вашей клиники, происходит двухкомпонентным секретным ключем, который знаете только Вы.
+						</p>
+					</div>
+					<div class="card">
+						<div class="card__top">
+							<h2 class="card__title">Простой</h2>
+							<img class="card__img" src="assets/plane.svg" alt="rocket-icon" />
+						</div>
+						<p class="card__text text">
+							Легкий и понятный интерфейс созданный совместно с клиниками и врачами, позволит быстро начать работать с
+							информационной системой.
+						</p>
+					</div>
+					<div class="card">
+						<div class="card__top">
+							<div class="card__group">
+								<h2 class="card__title">Законный</h2>
+								<div class="card__tooltip-wrapper">
+									<img class="card__info-icon" src="assets/tooltip-icon.svg" alt="tooltip" />
+									<div class="card__tooltip text text_color_black">Сервера на территории РФ (соответствие 152-ФЗ и 242-ФЗ)</div>
+								</div>
+							</div>
+							<img class="card__img" src="assets/balance.svg" alt="rocket-icon" />
+						</div>
+						<p class="card__text text">
+							Наши сервера находятся на территории РФ и все Ваши данные защищены методом фргментации в соответствие рекомендациями
+							Роскомнадзора.
+						</p>
+					</div>
+				</div>
+				<button class="section__button button button_size_medium button_primary section__element_margin-top_s">
+					Получить демо-доступ
+				</button>
+			</div>
+		</section>
 
-    <section class="section">
-      <div class="section__content">
-        <h3
-          class="section__title text text_color_black text_caption1 section__element_margin-bottom_m"
-        >
-          Для кого подходит MedLock?
-        </h3>
-        <div class="section__body">
-          <div class="card card_background_dark">
-            <div class="card__top">
-              <h2 class="card__title">Без МИС</h2>
-            </div>
-            <p class="card__counts text text_fontsize_big">
-              0 — 10 врачей
-            </p>
-            <p class="card__text text">
-              Для клиник, которые используют блокнот или файл Excel для записи
-              пациентов, MedLock позволит легко и быстро выйти на новый уровень
-              автоматизации.
-            </p>
-          </div>
-          <div class="card card_background_dark">
-            <div class="card__top">
-              <h2 class="card__title">Без бюджета</h2>
-            </div>
-            <p class="card__counts text text_fontsize_big">
-              10 — 30 врачей
-            </p>
-            <p class="card__text text">
-              Для клиник, которые хотят сэкономить на ежемесячной оплате за
-              типовую облачную МИС или на одноразовой оплате за сервер с
-              офлановой МИС.
-            </p>
-          </div>
-          <div class="card card_background_dark">
-            <div class="card__top">
-              <h2 class="card__title">С устаревшей МИС</h2>
-            </div>
-            <p class="card__counts text text_fontsize_big">
-              более 50 вречей
-            </p>
-            <p class="card__text text text">
-              Для клиник, которые давно купили офлайновую МИС, но не используют
-              многие модули старой МИС и недовольны отсутствие интеграции в ней
-              с порталом ПроДокторов.
-            </p>
-          </div>
-        </div>
-        <button
-          class="section__button button button_size_medium button_primary section__element_margin-top_s"
-        >
-          Бесплатное обучение
-        </button>
-      </div>
-    </section>
+		<section class="section">
+			<div class="section__content">
+				<h3 class="section__title text text_color_black text_caption1 section__element_margin-bottom_m">
+					Для кого подходит MedLock?
+				</h3>
+				<div class="section__body">
+					<div class="card card_background_dark">
+						<div class="card__top">
+							<h2 class="card__title">Без МИС</h2>
+						</div>
+						<p class="card__counts text text_fontsize_big">
+							0 — 10 врачей
+						</p>
+						<p class="card__text text">
+							Для клиник, которые используют блокнот или файл Excel для записи пациентов, MedLock позволит легко и быстро выйти на
+							новый уровень автоматизации.
+						</p>
+					</div>
+					<div class="card card_background_dark">
+						<div class="card__top">
+							<h2 class="card__title">Без бюджета</h2>
+						</div>
+						<p class="card__counts text text_fontsize_big">
+							10 — 30 врачей
+						</p>
+						<p class="card__text text">
+							Для клиник, которые хотят сэкономить на ежемесячной оплате за типовую облачную МИС или на одноразовой оплате за
+							сервер с офлановой МИС.
+						</p>
+					</div>
+					<div class="card card_background_dark">
+						<div class="card__top">
+							<h2 class="card__title">С устаревшей МИС</h2>
+						</div>
+						<p class="card__counts text text_fontsize_big">
+							более 50 вречей
+						</p>
+						<p class="card__text text text">
+							Для клиник, которые давно купили офлайновую МИС, но не используют многие модули старой МИС и недовольны отсутствие
+							интеграции в ней с порталом ПроДокторов.
+						</p>
+					</div>
+				</div>
+				<button class="section__button button button_size_medium button_primary section__element_margin-top_s">
+					Бесплатное обучение
+				</button>
+			</div>
+		</section>
 
-    <section class="section">
-        <div class="section__content">
-        <h3
-          class="section__title text text_color_black text_caption2 section__element_margin-bottom_l"
-        >
-          Отзывы клиентов
-        </h3>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="slider__slide">
-              <div class="review">
-                <div class="review__header">
-                  <div class="review__about-author-container">
-                    <img
-                      class="review__author-photo"
-                      src="assets/author2.png"
-                      alt="photo"
-                    />
-                    <div class="review__author-name-post-container">
-                      <h3 class="review__author-name">
-                        Азизов Ахмед Пирмагомедович
-                      </h3>
-                      <p class="review__author-post paragraph_big">
-                        доктор медицинских наук, профессор
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <p class="review__text text text_color_dark">
-                  Наш системный администратор предложил мне систематизировать
-                  работу клиники с помощью новой программы MedLock, которая
-                  отличается простотой использования. С помощью этой программы
-                  удалось в значительной мере сократить бумажную работу персонала
-                  и больше времени уделить лечению и вниманию к пациенту. Выражаю
-                  большую благодарность разработчикам и желаю больших успехов в
-                  дальнейшей деятельности.
-                </p>
-                <div class="review__erased">
-                  <p class="review__show-more">Показать полностью</p>
-                </div>
-              </div>
-            </div>
-            <div class="slider__slide">
-              <div class="review">
-                <div class="review__header">
-                  <div class="review__about-author-container">
-                    <img
-                      class="review__author-photo"
-                      src="assets/author2.png"
-                      alt="photo"
-                    />
-                    <div class="review__author-name-post-container">
-                      <h3 class="review__author-name">
-                        Азизов Ахмед Пирмагомедович
-                      </h3>
-                      <p class="review__author-post paragraph_big">
-                        доктор медицинских наук, профессор
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <p class="review__text text text_color_dark">
-                  Наш системный администратор предложил мне систематизировать
-                  работу клиники с помощью новой программы MedLock, которая
-                  отличается простотой использования. С помощью этой программы
-                  удалось в значительной мере сократить бумажную работу персонала
-                  и больше времени уделить лечению и вниманию к пациенту. Выражаю
-                  большую благодарность разработчикам и желаю больших успехов в
-                  дальнейшей деятельности.
-                </p>
-                <div class="review__erased">
-                  <p class="review__show-more">Показать полностью</p>
-                </div>
-              </div>
-            </div>
-            <div class="slider__slide">
-              <div class="review">
-                <div class="review__header">
-                  <div class="review__about-author-container">
-                    <img
-                      class="review__author-photo"
-                      src="assets/author2.png"
-                      alt="photo"
-                    />
-                    <div class="review__author-name-post-container">
-                      <h3 class="review__author-name">
-                        Азизов Ахмед Пирмагомедович
-                      </h3>
-                      <p class="review__author-post paragraph_big">
-                        доктор медицинских наук, профессор
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <p class="review__text text text_color_dark">
-                  Наш системный администратор предложил мне систематизировать
-                  работу клиники с помощью новой программы MedLock, которая
-                  отличается простотой использования. С помощью этой программы
-                  удалось в значительной мере сократить бумажную работу персонала
-                  и больше времени уделить лечению и вниманию к пациенту. Выражаю
-                  большую благодарность разработчикам и желаю больших успехов в
-                  дальнейшей деятельности.
-                </p>
-                <div class="review__erased">
-                  <p class="review__show-more">Показать полностью</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slider__button slider__button-next">
-            <img class="slider__arrow" src="assets/right-arrow-slider.svg" alt="next">
-          </div>
-          <div class="slider__button slider__button-prev">
-            <img class="slider__arrow" src="assets/left-arrow-slider.svg" alt="prev">
-          </div>
-        </div>
-        <button
-          class="section__button button button_size_medium button_primary section__element_margin-top_m"
-        >
-          Попробовать бесплатно
-        </button>
-      </div>
-    </section>
+		<section class="section">
+			<div class="section__content">
+				<h3 class="section__title text text_color_black text_caption2 section__element_margin-bottom_l">
+					Отзывы клиентов
+				</h3>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="slider__slide">
+							<div class="review">
+								<div class="review__header">
+									<div class="review__about-author-container">
+										<img class="review__author-photo" src="assets/author2.png" alt="photo" />
+										<div class="review__author-name-post-container">
+											<h3 class="review__author-name">
+												Азизов Ахмед Пирмагомедович
+											</h3>
+											<p class="review__author-post paragraph_big">
+												доктор медицинских наук, профессор
+											</p>
+										</div>
+									</div>
+								</div>
+								<p class="review__text text text_color_dark">
+									Наш системный администратор предложил мне систематизировать работу клиники с помощью новой программы MedLock,
+									которая отличается простотой использования. С помощью этой программы удалось в значительной мере сократить
+									бумажную работу персонала и больше времени уделить лечению и вниманию к пациенту. Выражаю большую благодарность
+									разработчикам и желаю больших успехов в дальнейшей деятельности.
+								</p>
+								<div class="review__erased">
+									<p class="review__show-more">Показать полностью</p>
+								</div>
+							</div>
+						</div>
+						<div class="slider__slide">
+							<div class="review">
+								<div class="review__header">
+									<div class="review__about-author-container">
+										<img class="review__author-photo" src="assets/author2.png" alt="photo" />
+										<div class="review__author-name-post-container">
+											<h3 class="review__author-name">
+												Азизов Ахмед Пирмагомедович
+											</h3>
+											<p class="review__author-post paragraph_big">
+												доктор медицинских наук, профессор
+											</p>
+										</div>
+									</div>
+								</div>
+								<p class="review__text text text_color_dark">
+									Наш системный администратор предложил мне систематизировать работу клиники с помощью новой программы MedLock,
+									которая отличается простотой использования. С помощью этой программы удалось в значительной мере сократить
+									бумажную работу персонала и больше времени уделить лечению и вниманию к пациенту. Выражаю большую благодарность
+									разработчикам и желаю больших успехов в дальнейшей деятельности.
+								</p>
+								<div class="review__erased">
+									<p class="review__show-more">Показать полностью</p>
+								</div>
+							</div>
+						</div>
+						<div class="slider__slide">
+							<div class="review">
+								<div class="review__header">
+									<div class="review__about-author-container">
+										<img class="review__author-photo" src="assets/author2.png" alt="photo" />
+										<div class="review__author-name-post-container">
+											<h3 class="review__author-name">
+												Азизов Ахмед Пирмагомедович
+											</h3>
+											<p class="review__author-post paragraph_big">
+												доктор медицинских наук, профессор
+											</p>
+										</div>
+									</div>
+								</div>
+								<p class="review__text text text_color_dark">
+									Наш системный администратор предложил мне систематизировать работу клиники с помощью новой программы MedLock,
+									которая отличается простотой использования. С помощью этой программы удалось в значительной мере сократить
+									бумажную работу персонала и больше времени уделить лечению и вниманию к пациенту. Выражаю большую благодарность
+									разработчикам и желаю больших успехов в дальнейшей деятельности.
+								</p>
+								<div class="review__erased">
+									<p class="review__show-more">Показать полностью</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider__button slider__button-next">
+						<img class="slider__arrow" src="assets/right-arrow-slider.svg" alt="next" />
+					</div>
+					<div class="slider__button slider__button-prev">
+						<img class="slider__arrow" src="assets/left-arrow-slider.svg" alt="prev" />
+					</div>
+				</div>
+				<button class="section__button button button_size_medium button_primary section__element_margin-top_m">
+					Попробовать бесплатно
+				</button>
+			</div>
+		</section>
 
-    <footer class="footer">
-      <div class="footer__content">
-        <img
-          class="footer__logo"
-          src="assets/footer_logo_medlock.png"
-          alt="logo"
-        />
-        <div class="footer__list-container">
-          <div class="list list_columned">
-            <div class="list__items">
-              <a class="list__item" href="#">О компании</a>
-              <a class="list__item" href="#">Команда</a>
-              <a class="list__item" href="#">Документы компании</a>
-              <a class="list__item" href="#">Контакты</a>
-            </div>
-          </div>
-          <div class="list list_columned">
-            <h4 class="list__title">Условия использования</h4>
-            <div class="list__items">
-              <a class="list__item" href="#">Лицензионный договор</a>
-              <a class="list__item" href="#">Обработка персональных данных</a>
-            </div>
-          </div>
-          <div class="list">
-            <h4 class="list__title">Наши проекты</h4>
-            <div class="list__items">
-              <a class="list__item" href="#">ПроДокторов</a>
-              <a class="list__item" href="#">ПроТаблетки</a>
-              <a class="list__item" href="#">МедОтвет</a>
-              <a class="list__item" href="#">ПроБолезни</a>
-            </div>
-          </div>
-          <img class="footer__logo2" src="assets/logo2.png" alt="logo" />
-        </div>
-        <div class="footer__additional-container">
-          <p class="footer__additional-element text text_fontsize_big">
-            © 2014-2019&nbsp;&nbsp;ООО «МедРейтинг»&nbsp;&nbsp;ОГРН 1122311003760
-          </p>
-          <p class="footer__additional-element text text_fontsize_big">
-            8 (800) 333-53-17&nbsp;&nbsp;help@medlock.ru
-          </p>
-        </div>
-      </div>
-    </footer>
+		<footer class="footer">
+			<div class="footer__content">
+				<img class="footer__logo" src="assets/footer_logo_medlock.png" alt="logo" />
+				<div class="footer__list-container">
+					<div class="list list_columned">
+						<div class="list__items">
+							<a class="list__item" href="#">О компании</a>
+							<a class="list__item" href="#">Команда</a>
+							<a class="list__item" href="#">Документы компании</a>
+							<a class="list__item" href="#">Контакты</a>
+						</div>
+					</div>
+					<div class="list list_columned">
+						<h4 class="list__title">Условия использования</h4>
+						<div class="list__items">
+							<a class="list__item" href="#">Лицензионный договор</a>
+							<a class="list__item" href="#">Обработка персональных данных</a>
+						</div>
+					</div>
+					<div class="list">
+						<h4 class="list__title">Наши проекты</h4>
+						<div class="list__items">
+							<a class="list__item" href="#">ПроДокторов</a>
+							<a class="list__item" href="#">ПроТаблетки</a>
+							<a class="list__item" href="#">МедОтвет</a>
+							<a class="list__item" href="#">ПроБолезни</a>
+						</div>
+					</div>
+					<img class="footer__logo2" src="assets/logo2.png" alt="logo" />
+				</div>
+				<div class="footer__additional-container">
+					<p class="footer__additional-element text text_fontsize_big">
+						© 2014-2019&nbsp;&nbsp;ООО «МедРейтинг»&nbsp;&nbsp;ОГРН 1122311003760
+					</p>
+					<p class="footer__additional-element text text_fontsize_big">
+						8 (800) 333-53-17&nbsp;&nbsp;help@medlock.ru
+					</p>
+				</div>
+			</div>
+		</footer>
 
-    <section class="with-love">
-      <p class="with-love__text text text_fontsize_small">
-        СДЕЛАНО С ТОЙ САМОЙ&nbsp;&nbsp;
-      </p>
-      <img class="with-love__image" src="assets/heart.svg" alt="heart-image" />
-      <p class="with-love__text text text_fontsize_small">&nbsp;&nbsp;ЛЮБОВЬЮ</p>
-    </section>
+		<section class="with-love">
+			<p class="with-love__text text text_fontsize_small">
+				СДЕЛАНО С ТОЙ САМОЙ&nbsp;&nbsp;
+			</p>
+			<img class="with-love__image" src="assets/heart.svg" alt="heart-image" />
+			<p class="with-love__text text text_fontsize_small">&nbsp;&nbsp;ЛЮБОВЬЮ</p>
+		</section>
 
-    <div class="modal">
-      <div class="appointment">
-        <div class="appointment__wrapper appointment__wrapper_padding_title">
-          <p class="appointment__title text text_color_black">Выберите дату и время записи на демонстрацию</p>
-          <div class="appointment__close-btn">
-            <img class="appointment__close-icon" src="assets/crossing.svg" alt="x">
-          </div>
-        </div>
-        <div class="appointment__wrapper appointment__wrapper_no-border appointment__wrapper_fullheight">
-          <div class="appointment__inner-wrapper appointment__inner-wrapper_width_m appointment__inner-wrapper_white">
-            <div class="calendar"></div>
-          </div>
-          <div class="appointment__inner-wrapper appointment__inner-wrapper_width_s appointment__inner-wrapper_blue appointment__inner-wrapper_stretch">
-            <div class="time-select"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+		<div class="modal">
+			<div class="appointment">
+				<div class="appointment__wrapper appointment__wrapper_padding_title">
+					<p class="appointment__title text text_color_black">Выберите дату и время записи на демонстрацию</p>
+					<div class="appointment__close-btn">
+						<img class="appointment__close-icon" src="assets/crossing.svg" alt="x" />
+					</div>
+				</div>
+				<div class="appointment__wrapper appointment__wrapper_no-border appointment__wrapper_fullheight">
+					<div class="appointment__inner-wrapper appointment__inner-wrapper_width_m appointment__inner-wrapper_white">
+						<div class="calendar"></div>
+					</div>
+					<div
+						class="appointment__inner-wrapper appointment__inner-wrapper_width_s appointment__inner-wrapper_blue appointment__inner-wrapper_stretch"
+					>
+						<div class="time-select"></div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <script src="blocks/modal.js"></script>
-    <script src="blocks/header.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="blocks/slider.js" ></script>
-    <script src="blocks/parallax.js"></script>
-    <script src="blocks/rewiew.js"></script>
-    <script src="blocks/time_select.js"></script>
-    <script src="blocks/calendar.js"></script>
-  </body>
+		<script src="Helpers/Element.js"></script>
+		<script src="Helpers/Component.js"></script>
+		<script src="blocks/modal.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="blocks/slider.js"></script>
+		<script src="blocks/parallax.js"></script>
+		<script src="blocks/rewiew.js"></script>
+		<script src="blocks/appointment.js"></script>
+		<script src="blocks/time_select.js"></script>
+		<script src="blocks/calendar.js"></script>
+		<script src="blocks/header.js"></script>
+	</body>
 </html>
