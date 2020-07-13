@@ -15,8 +15,7 @@ const month = [
 
 const dayOfWeek = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
 
-
-class Appointment{
+class Appointment {
 	constructor() {
 		const date = new Date();
 		this.calendarData = {
@@ -31,6 +30,7 @@ class Appointment{
 		this.currentTimeList = null;
 		this.timeSelectData = {};
 		this.changeTimeSelectData = this.changeTimeSelectData.bind(this);
+		this.changeWindow = this.changeWindow.bind(this);
 		this.root = this.init();
 	}
 
@@ -62,9 +62,8 @@ class Appointment{
 		);
 
 		this.calendarWrapper = calendarWrapper.elementRoot;
-		this.timeSelectWrapper = timeSelectWrapper.elementRoot;	
-		
-		
+		this.timeSelectWrapper = timeSelectWrapper.elementRoot;
+
 		return mainContainer.append(
 			headerWrapper.append(title, closeButton.append(closeButtonIcon)),
 			bodyWrapper.append(calendarWrapper, timeSelectWrapper)
@@ -72,46 +71,52 @@ class Appointment{
 	}
 
 	async getAvaliableDates(calendarData) {
-		let monthNumber = calendarData.curMonthNum + 1;
-		let url = `http://192.168.0.69:8000/get_booked_dates/${calendarData.curYear}/${monthNumber > 9 ? monthNumber : '0' + monthNumber}`;
+		// let monthNumber = calendarData.curMonthNum + 1;
+		// let url = `http://192.168.0.69:8000/get_booked_dates/${calendarData.curYear}/${
+		// 	monthNumber > 9 ? monthNumber : '0' + monthNumber
+		// }`;
 
-		let response = await fetch(url);
-		if (response.ok) {
-			let data = await response.json();
-			if (Object.keys(data).length > 0) {
-				let avaliableDates = {};
-				for (const line of data) {
-					let [date, time] = line.split(' ');
-					let [year, month, day] = date.split('-');
-					let key = [day, +month, year].join(' ');
-					time = time.slice(0, -3);
-					if (avaliableDates[key]) {
-						avaliableDates[key].push(time);
-					} else {
-						avaliableDates[key] = [time];
-					}
-				}
-				console.log(avaliableDates);
-				
-				return avaliableDates;
-			}
-		} 
-		return {};
+		// let response = await fetch(url);
+		// if (response.ok) {
+		// 	let data = await response.json();
+		// 	if (Object.keys(data).length > 0) {
+		// 		let avaliableDates = {};
+		// 		for (const line of data) {
+		// 			let [date, time] = line.split(' ');
+		// 			let [year, month, day] = date.split('-');
+		// 			let key = [day, +month, year].join(' ');
+		// 			time = time.slice(0, -3);
+		// 			if (avaliableDates[key]) {
+		// 				avaliableDates[key].push(time);
+		// 			} else {
+		// 				avaliableDates[key] = [time];
+		// 			}
+		// 		}
+		// 		return avaliableDates;
+		// 	}
+		// }
+		// return {};
+		return {
+			'20 7 2020': ['8:00', '9:30'],
+		};
 	}
 
-	changeTimeSelectData(date, timeList) {	
+	changeTimeSelectData(date, timeList) {
 		this.timeSelectInst.cleanTimeList();
 		if (timeList) {
 			this.timeSelectInst.setTimeList(timeList);
 			this.timeSelectInst.setDate(date);
-		}	
+		}
 	}
 
-	// 
-	// TODO 
-	// 
+	//
+	// TODO
+	//
 	changeWindow(data) {
-		modal.modalWindowOpen(new PersonalDataWindow(data));
+		this.calendarInst = new AboutAppointment(data);
+		this.calendarWrapper.innerHTML = '';
+		this.calendarWrapper.append(this.calendarInst.render());
+		// modal.modalWindowOpen(new AboutAppointment(data));
 	}
 
 	render() {
