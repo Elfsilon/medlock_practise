@@ -1,26 +1,36 @@
+
 class TimeSelect {
     root = null;
     timeList = null;
     timeSelected = null;
+    date = {
+        month: null,
+	    year: null,
+		day: null,
+		dayOfWeek: null
+    };
 
-    constructor(blockSelector) {
-        this.root = document.querySelector(blockSelector);
-        this.timeSelectInit();
-        this.timeSelectRender();
+    constructor(changeWindow) {
+        this.changeWindow = changeWindow;
+        this.root = this.init();
     }
 
     setTimeList(timeList) {
         this.timeList = [...timeList];
-        this.timeSelectRender();
+        this.root.elementRoot = this.render();
     }
 
     cleanTimeList() {
         this.timeList = null;
-        this.timeSelectRender();
+        this.root.elementRoot = this.render();
     }
 
-    timeSelectInit() {
-        this.root.addEventListener('click', (e) => {
+    setDate(obj) {
+        this.date = Object.assign({}, obj);
+    }
+
+    init() {
+        return new Element('div').addClassNames('time-select').addListener('click', (e) => {
             if (this.timeSelected || e.target.classList.contains('time-select__unselect-button')) {
                 this.timeSelected.classList.remove('time-select__time_selected');
                 this.timeSelected.nextElementSibling.classList.add('time-select_hidden');
@@ -32,36 +42,53 @@ class TimeSelect {
                 e.target.previousElementSibling.classList.remove('time-select_hidden');
                 this.timeSelected = e.target;
             }
-            if (e.target.classList.contains('time-select__select-button')) { /* Some code */ }
+            if (e.target.classList.contains('time-select__select-button')) { 
+                let time = e.target.previousElementSibling.textContent;
+                let monthName;
+                let dayOfWeekName;
+                if (this.date.month == 2 || this.date.month == 7) {
+                    monthName = month[this.date.month] + 'а';
+                } else {
+                    monthName = (month[this.date.month]).slice(0, -1) + 'я';
+                }
+                dayOfWeekName = dayOfWeek[this.date.dayOfWeek];
+
+                this.changeWindow({
+                    time,
+                    monthName,
+                    dayOfWeekName,
+                    day: this.date.day,
+                    year: this.date.year
+                });
+            }
         });
     }
     
-    timeSelectClean() {
-        this.root.innerHTML = '';
+    resetBody() {
+        this.root.elementRoot.innerHTML = '';
     }
 
-    timeSelectCellTemplate(timestring) {
-        return `
-        <div class="time-select__cell time-select__cell_selected">
-            <img class="time-select__unselect-button time-select_hidden" src="assets//unselect.svg" alt="x">
-            <div class="time-select__time button button_dark-blue-bordered ">${timestring}</div>
-            <button class="time-select__select-button button button_dark-blue time-select_hidden">Выбрать</button>
-        </div>
-        `;
+    getCellTemplate(timestring) {
+        const cell = new Element('div').addClassNames('time-select__cell', 'time-select__cell_selected');
+        const unselectButton = new Element('img', 'assets//unselect.svg', 'x').addClassNames('time-select__unselect-button', 'time-select_hidden');
+        const timeContainer = new Element('div').addClassNames('time-select__time', 'button', 'button_dark-blue-bordered').addText(timestring);
+        const selectButton = new Element('button').addClassNames('time-select__select-button', 'button', 'button_dark-blue', 'time-select_hidden').addText('Выбрать');
+        return cell.append(unselectButton, timeContainer, selectButton);
     }
 
-    timeSelectMessageTemplate(message) {
-        return `<p class="time-select__message text">${message}</p>`;
+    getMessageTemplate(message) {
+        return new Element('p').addClassNames('time-select__message', 'text').addText(message);
     }
 
-    timeSelectRender() {
-        this.timeSelectClean();        
+    render() {
+        this.resetBody();        
         if (this.timeList) {
             for (const time of this.timeList) {
-                this.root.insertAdjacentHTML('beforeend', this.timeSelectCellTemplate(time));
+                this.root.append(this.getCellTemplate(time));
             }
         } else {
-            this.root.insertAdjacentHTML('beforeend', this.timeSelectMessageTemplate('Выберите день'));
-        }
+            this.root.append(this.getMessageTemplate('Выберите день'));
+        }    
+        return this.root.elementRoot;
     }
 }

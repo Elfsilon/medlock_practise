@@ -1,0 +1,43 @@
+.about-appointment {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about-appointment__time-region {
+    margin-left: 4px;
+}
+
+.about-appointment__wrapper {
+    margin-left: 10px;
+}
+
+.about-appointment__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.about-appointment__info:last-child {
+    margin-bottom: 0;
+}
+
+.about-appointment__caption {
+    font-weight: 700;
+    color: #3E3E3E;
+    margin-bottom: 22px;
+}
+
+.about-appointment__text {
+    margin-left: 18px;
+}
+
+.about-appointment__icon {
+    width: 22px;
+    height: 22px;
+}
+
+.about-appointment__back-button {
+    cursor: pointer;
+}

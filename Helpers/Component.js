@@ -11,7 +11,5 @@ class Component {
 		this.root = val;
 	}
 
-	set setStruct(name) {}
-
 	render() {}
 }

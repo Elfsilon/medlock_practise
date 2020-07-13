@@ -66,3 +66,15 @@
 .appointment__inner-wrapper_blue {
     background-color: #F7F9FB;
 }
+
+.appointment__form {
+    width: 100%;
+    height: 100%;
+    padding: 48px 40px 52px 40px;
+}
+
+.appointment__about-appointment {
+    padding: 28px 33px 24px 33px;
+    width: 100%;
+    height: 100%;
+}
