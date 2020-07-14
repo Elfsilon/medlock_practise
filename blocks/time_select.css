@@ -1,9 +1,9 @@
 .time-select {
   width: 100%;
   padding: 40px;
-  max-height: 363px;
+  height: 362px;
   overflow-y: scroll;
-  border-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .time-select__cell {

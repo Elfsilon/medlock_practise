@@ -40,6 +40,10 @@
     background: linear-gradient(0deg, rgba(255,255,255,1) 60%, rgba(255,255,255,0.9) 80%, rgba(255,255,255,0) 100%);
 }
 
+.review__erased_hidden {
+    display: none;
+}
+
 .review__show-more {
     color: #117DC1;
     border-bottom: 1px #117DC1 dashed;

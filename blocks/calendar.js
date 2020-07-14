@@ -48,10 +48,10 @@ class Calendar {
 			}
 		});
 		let wrapper = new Element('div').addClassNames('calendar__wrapper');
-		let nextMonthButton = new Element('img', 'assets/right_arrow.svg', '>').addClassNames('calendar__button-next').addListener('click', () => {
+		let nextMonthButton = new Element('img', 'assets/right_arrow.svg', '>').addClassNames('calendar__button', 'calendar__button-next').addListener('click', () => {
 			this.calendarChangeToNextMonth();
 		});
-		let prevMonthButton = new Element('img', 'assets/left_arrow.svg', '<').addClassNames('calendar__button-prev').addListener('click', () => {
+		let prevMonthButton = new Element('img', 'assets/left_arrow.svg', '<').addClassNames('calendar__button', 'calendar__button-prev').addListener('click', () => {
 			this.calendarChangeToPrevMonth();
 		});
 		let curDateContainer = new Element('div').addClassNames('calendar__current-date');

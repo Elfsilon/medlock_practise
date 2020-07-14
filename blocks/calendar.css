@@ -18,7 +18,7 @@
 .calendar__head {
     font-weight: 700;
     user-select: none;
-    cursor: auto;
+    cursor: default;
 }
 
 .calendar__head_font_dark {
@@ -33,7 +33,6 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    cursor: pointer;
     user-select: none;
     color: #5A5C61;
     font-weight: 700;
@@ -42,10 +41,11 @@
 
 .calendar__current-date {
     display: flex;
+    user-select: none;
 }
 
 .calendar__current-month {
-    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .calendar__cell:nth-child(7n) {
@@ -55,12 +55,12 @@
 .calendar__cell_disabled {
     color: #ADB0B8;
     font-weight: 500;
-    cursor: auto;
 }
 
 .calendar__cell_avalible {
     color: #117DC1;
     background-color: #E5F2F9;
+    cursor: pointer;
 }
 
 .calendar__cell_active {
@@ -72,9 +72,13 @@
 .calendar__cell_active::after {
     content: '.';
     position: absolute;
-    bottom: 0;
+    bottom: -5%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-40%);
     color: white;
     font-size: 25px;
+}
+
+.calendar__button {
+    cursor: pointer;
 }

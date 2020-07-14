@@ -10,8 +10,8 @@ class TimeSelect {
 		dayOfWeek: null
     };
 
-    constructor(changeWindow) {
-        this.changeWindow = changeWindow;
+    constructor(callback) {
+        this.changeWindow = callback;
         this.root = this.init();
     }
 

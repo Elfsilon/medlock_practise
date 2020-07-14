@@ -1,0 +1,22 @@
+.thanks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.thanks__caption {
+    margin-top: 22px;
+    margin-bottom: 12px;
+}
+
+.thanks__text {
+    font-size: 20px;
+    color: #606161;
+    max-width: 335px;
+    text-align: center;
+}
+
+.thanks__text_bold {
+    font-weight: 700;
+}

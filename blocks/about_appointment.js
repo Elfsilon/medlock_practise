@@ -1,17 +1,20 @@
 class AboutAppointment {
-	constructor(data) {
+	constructor(data, showPrevPage) {
+		this.showPrevPage = showPrevPage;
 		this.data = Object.assign({}, data);
 		this.root = this.init();
 	}
 
 	init() {
 		let outerWrapper = new Element('div').addClassNames('appointment__about-appointment', 'about-appointment');
-		let backButton = new Element('img', 'assets/blue_arrow.svg', 'Back').addClassNames('about-appointment__back-button');
+		let backButton = new Element('img', 'assets/blue_arrow.svg', 'Back').addClassNames('about-appointment__back-button').addListener('click', () => {
+			this.showPrevPage();
+		});
 		let timeRegion = new Element('p')
 			.addClassNames('about-appointment__time-region', 'text', 'text_fontsize_small')
 			.addText('Московское время');
 		let innerWrapper = new Element('div').addClassNames('about-appointment__wrapper');
-		let caption = new Element('p').addClassNames('about-appointment__caption', 'text', 'text_caption2', 'text_color_black');
+		let caption = new Element('p').addClassNames('about-appointment__caption', 'text', 'text_caption2', 'text_color_black').addText('Демонстрация MedLock');
 		let durationContainer = new Element('div').addClassNames('about-appointment__info');
 		let dateContainer = new Element('div').addClassNames('about-appointment__info');
 		let icon1 = new Element('img', 'assets/fast.svg', 'Duration:').addClassNames('about-appointment__icon');

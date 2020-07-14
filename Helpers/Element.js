@@ -17,6 +17,41 @@ class Element {
 		this.root = val;
 	}
 
+	setId(id) {
+		this.elementRoot.setAttribute('id', id);
+		return this;
+	}
+
+	setType(type) {
+		this.elementRoot.setAttribute('type', type);
+		return this;
+	}
+
+	setPlaceholder(text) {
+		this.elementRoot.setAttribute('placeholder', text);
+		return this;
+	}
+
+	setFor(id) {
+		this.elementRoot.setAttribute('for', id);
+		return this;
+	}
+
+	setRequired() {
+		this.elementRoot.setAttribute('required', 'required');
+		return this;
+	}
+
+	setMethod(method) {
+		this.elementRoot.setAttribute('method', method);
+		return this;
+	}
+
+	setAction(action) {
+		this.elementRoot.setAttribute('action', action);
+		return this;
+	}
+
 	addText(text) {
 		this.elementRoot.textContent = text;
 		return this;

@@ -11,11 +11,13 @@
 
 .about-appointment__wrapper {
     margin-left: 10px;
+    margin-top: 64px;
+    margin-bottom: 108px;
 }
 
 .about-appointment__info {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     margin-bottom: 14px;
 }
 
